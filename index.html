@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script src="js/NcwKyWeVbPpp.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/4ZgLXjo9drEq.css">
+<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<title>Ninja Crash</title>
+<style>
+  #btnCreate.disabled {
+    opacity: 0.5;
+  }
+
+  .timer {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    color: white; /* Cor do texto branca */
+    padding: 20px; /* Espaçamento em torno do conteúdo */
+  }
+</style>
+</head>
+<body>
+<div class="bloco">
+  <img src="images/NrN4XDDLW712.png" alt="Logo" class="logo flutuante">
+  <div class="titulo flutuante">Válido por 3 minutos!</div>
+
+  <div class="jogadas"><b>Siga a quantidade de cortes:</b>
+  
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gerador de Número Aleatório</title><br>⚔️ <span class="destaque">
+      <link rel="stylesheet" href="style.css">
+  
+  
+  
+  
+      <div class="generator-container">
+          <h1></h1>
+        <button id="btnCreate" class="pulsar">Gerar Cortes</button>
+      </div>
+  
+      <script src="js/Ei6jRMuskkPi.js" defer=""></script>
+
+  <div class="chance"><span class="perc">99.90%</span> de chance de <span class="destaque">GANHO</span></div>
+
+  <div class="timer" id="timer">03:00</div>
+  <body>
+    <p>FAÇA UM DEPOSITO ACIMA DE 50$ E GANHE 100% DE BÔNUS!!</p>
+</body>
+</html>
+<a style="margin: 22px 0;"></a>
+  <iframe class="iframejogo" src="https://apostamax.bet/?ref=1fb48127b4f3"></iframe>
+
+  <br>
+  <!-- código novo aqui -->
+</span></div>
+<script src="js/K8zXmeOSFvhV.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#btnCreate').click(function() {
+      const btnCreate = $(this);
+
+      if (!btnCreate.hasClass('disabled')) {
+        btnCreate.addClass('disabled');
+        btnCreate.prop('disabled', true);
+
+        let count = 180; // 3 minutos em segundos
+        btnCreate.html(`${count} SEGUNDOS`);
+
+        const timer = setInterval(function() {
+          count--;
+          var minutes = Math.floor(count / 60);
+          var seconds = count % 60;
+
+          // Adiciona um zero à esquerda se o número for menor que 10
+          minutes = minutes < 10 ? '0' + minutes : minutes;
+          seconds = seconds < 10 ? '0' + seconds : seconds;
+
+          $('#timer').text(minutes + ':' + seconds);
+
+          if (count === 0) {
+            clearInterval(timer);
+            btnCreate.html('Gerar Cortes');
+            btnCreate.removeClass('disabled');
+            btnCreate.prop('disabled', false);
+          }
+        }, 1000);
+
+        $.ajax({
+          url: 'func_frutas.php',
+          type: 'GET',
+          dataType: 'json',
+          success: function(data) {
+            $('.chance .perc').text(data.chancePerc + '%');
+            $('.jogadas .destaque').text(data.jogadasNormal + 'x');
+            $('.titulo').html(data.currentTime + ' - ' + data.futureTime);
+          },
+          error: function() {
+            console.log('Erro ao carregar os dados.');
+          }
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
